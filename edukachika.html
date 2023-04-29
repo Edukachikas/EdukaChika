@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html>
+<title>B10-10-S2-1_Group 4's Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif;
+    }
+ 
+    body,
+    html {
+        height: 100%;
+        color:  #023020;
+        line-height: 1.8;
+        scroll-behavior: smooth;
+    }
+ 
+    /* Create a Parallax Effect */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4
+     {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+ 
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+        background-image: url("website img.png");
+        min-height: 100%;
+    }
+ 
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+        background-image: url("backgroundimg2.png");
+        min-height: 100%;
+    }
+ 
+    /* Third image (Contact) */
+    .bgimg-3 {
+        background-image: url("backgroundimg1.png");
+        min-height: 500%;
+    }
+ 
+    }
+ 
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+ 
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+ 
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+ 
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: scroll;
+            min-height: 400px;
+        }
+    }
+</style>
+ 
+<body>
+ 
+    <!-- Navbar (sit on top) -->
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;  
+  border: none;
+  outline: none;
+  color: #023020;
+  padding: 8px 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #cacbcc;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #023020;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #BFC4A3;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+  <a href="#home" class="w3-bar-item w3-button">HOME</a>
+  <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT US</a>
+  <div class="dropdown">
+    <button class="dropbtn">OUR CONTENT 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-top">
+    <div class="dropdown-content">
+      <a href="#portfolio">Quarter 1</a>
+      <a href="#q2">Quarter 2</a>
+      <a href="#q3">Quarter 3</a>
+      <a href="#q4">Quarter 4</a>
+  </div>
+    </div>
+  </div>
+  <a href="#needofstreaming" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> OUR EVENTS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT US</a>
+</div>
+</div>
+
+    <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT US</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">OUR CONTENT</a>
+            <a href="#q2" class="w3-bar-item w3-button" onclick="toggleFunction()">OUR EVENTS</a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href= "#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT US</a>
+        </div>
+    </div>
+
+ 
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span
+                    class="w3-hide-small">EDUKACHIKA'S </span> WEBSITE</span>
+        </div>
+    </div>
+ 
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center"><b>WHAT IS EDUKACHIKA?</b></h3>
+        <center><img src="EDUKACHIKA.png" width="350" height="333"></center>
+        <p class="w3-center">EdukaChika is a group composing of 6 members, all with a goal of knowing one thing. What study method is best for you?</p>
+
+        <p>Each student is unique—and each learner has different ways of learning. From visuals, like creating graphic organizers, mindmaps, or infographics to learn something,  auditorial learners who learn through listening, kinesthetic learners who learn hands-on, to the reading/writting learners. As you can see, there are many types of learners, and with many types of learners, there are also a over a wide variety of study methods for each kearner to use.</p>
+
+        <p>TikTok is an application where people can create videos regarding anything under the sun— A sub-community: StudyTok is one of the many popular sub-communities on the app, with over 7.4 billion views under the hastag; it shares ways on how you can ace your test, improce your essays, best ways to improve memory retention, how to solve a certain math equation, and what up-coming college students can expect once they enter it, those are just some of the many topics that are being talked about on StudyTok. EdukaChika wants to find out which study method popularized on TikTok is actually effective for junior highschool students, at the same time EdukaChika plans on discussing the different drawbacks to the study method, and members would rate how effective it was for them, and if they would recommend it to others.</p>
+        <br>
+        <br>
+
+        <b><em>GOALS:</em></b>
+        <p>EdukaChika's goal is to:<br>
+a.) find out what study methods popularized on TikTok work for each differing learner.<br>
+b.) Be able to give opinions, and experiences with using study method.<br>
+c.) Be able to test what is the best study method.<br>
+d.) Aims to<br>
+<br>
+<br>
+
+<b><em>MISSION:</em></b>
+<p>EdukaChika's mission is to be able to create a healthy environment for studying, and be able to make something many students dread, to something that can be fun. Furthermore, EdukaChika aims to spread awareness on internet 
+trust. Lastly, EdukaChika aims to investigate what study method is best for each learner through answering of online tests on-air.</p>
+
+
+
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center"><b>WHAT IS STREAMING?</b></h3>
+        <p class="w3-center"><em>In a nutshell it's filming in real time. May it be you playing games, chatting with viewers or people, or doing anything!</em></p>
+        <p>The continuous transmission of video data from a server to a client is known as video streaming. Video streaming allows users to interact with their clients. Users may watch videos online without having to download them. Movies, TV shows, YouTube videos, and live streamed material are examples of streaming video content. The continuous transmission of audio and video data from a server to a client is referred to as streaming. Content in video broadcasts is transferred in compressed form via the internet and is viewed in real time by the viewer.
+</p>
+        <br><br>
+          <h3 class="w3-center"><i>DIFFERENT CONTENT TYPES</i></h3>
+        <p>There are tons of different streaming content that can be seen in the streaming world.
+These are:
+<center><BR>
+Podcasts<BR>
+Webcasts<BR>
+Movies<BR>
+TV Shows<BR>
+Music videos<BR>
+Gaming<BR>
+Q&A’s<BR>
+Interviews<BR>
+Vlogs<BR>
+Tutorials<BR>
+News<BR>
+Events<BR>
+</p></center>
+<br><br>
+          <h3 class="w3-center"><i>PLATFORMS USED IN STREAMING</i></h3>
+          <p>Since live streaming has become more popular amongst the people nowadays, there are tons of streaming platforms that were created that people can use in order to stream their preferred content. These are some of the platforms that can be used for streaming:
+          </p>
+          <p><center><BR>
+          YouTube<br>
+          Twitch <br>
+          Facebook<br>
+          Instagram Live<br>
+          TikTok Live<br>
+          Kumu<br>
+          Bigo Live<BR>
+          </p>
+          </center>
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-user w3-margin-right"></i>CHOSEN CONTENT TYPE</b></p><br>
+                <img src="study.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="SIT Logo"
+                    width="100" height="222">
+            </div>
+ 
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p> Going beyond the conventional method of testing, the group has opted to conduct the study using a mixture of different content types. Mainly, podcasts, QnAs, and studystreams, but the group will mainly focus on studystreams. The objective of this activity is to determine if all, or any, of those study methods popularly shared by the StudyTok community actually works. The subjects of the study has been assigned different study methods, after which an online test will be conducted, to check for retention and efficiency. </p></div>
+        </div>
+    <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-user w3-margin-right"></i>CHOSEN STREAMING PLATFORM</b></p><br>
+                <img src="youtube.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="YouTube"
+                    width="200" height="333">
+            </div>
+ 
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p> As per the topic we have chosen— the team believes that "YouTube", and or “TikTok” is the right platform to stream in. In correlation to the research topic of finding out if StudyTok tips and tricks are effective in improving a Junior Highschool student's study habits—YouTube/Tiktok are the most appropriate app for streaming.  However, YouTube seems to be the easiest to operate streams on.  </p>
+            </div>
+        </div>
+           
+            </div>
+ 
+            </div>
+     
+            </div>
+           
+<br>
+<div>
+</div>
+    <!-- Second Parallax Image with Portfolio Text -->
+    <br><div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide"> WHAT DID THEY THINK?</span>
+        </div>
+    </div>
+ 
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center"><b>WHAT'D THEY THINK?</b> </h3>
+        <p class="w3-center"><em>Survey Responses.<br> <br>Click on the Images to Make
+                Them Bigger</em></p><br>
+ 
+<center><p><i>DEMOGRAPHIC</i></p></center>
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="gender.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Gender of Respondents">
+            </div>
+ 
+            <div class="w3-col m3">
+                <img src="gradelevel.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Academic Attainment/ Grade Level">
+            </div>
+ 
+            <div class="w3-col m3">
+                <img src="age.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Age Demographic">
+            </div>
+<div class="w3-col m3">
+                <img src="streamplatform.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Streaming Platform Used by The Respondents">
+       
+            </div>
+        </div>
+        <div>
+            <br><br>
+<center><p><i>DATA INTERPRETATION</i></p></center>
+<p>Based on the survey the group has provided, which, aside from asking personal questions, it also asked about the respondents' preferred streaming content type, with focus on our research topic.<br>See the image below as reference</p>
+<br><center><img src= "summary.png" width="750" height="550"></center>
+  <br><br><center><i>BELIEFS AND OPINIONS ON THE TOPIC</i></center>
+  <P>Most respondents (39.4%) (13 respondents) answered live interviews/ QnAs because they would like to get to know a person and their thoughts and opinions on something or someone.
+    <br> Second content type taking lead– Live podcasts. 33.3%  (11 respondents) of the students want to listen to podcasts because most of them want to listen in on the speakers' opinions on something.
+ 
+     <br>Lastly, 27.3% (9 respondents) of students chose to study streams because they would want someone to study with. To keep themselves company.  
+<br>
+<br><br> 48.5% of the respondents were familiar with the term/ sub-community called “StudyTok”.
+<br><br>51.5% of the respondents were not familiar with the term/ sub-community called “StudyTok”.
+<br>
+<br>For those who were familiar with StudyTok; the survey made the respondent's rate how much StudyTokk has helped them improve their study habits (scale of 1 - 5; 1 being the lowest and 5 being the highest)
+<br><br>6.3% responded with 1 (Did not help in improving my study habits at all)
+<br><br>None have responded with 2 (I picked up 1 or 2 study habits)
+<br><br>18.8% responded with 3 (Has somewhat helped in improving my study habits)
+<br><br>43.8% responded with a  4 (Picked up a significant amount of study habits/ ways of improving study habits)
+<br><br>31.3% responded with a 5 (has helped very much in improving my study habits)
+ 
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+                class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+ 
+   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+ 
+<body>
+  <div class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center"><b>NEEDS OF VIEWERS</b> </h3>
+ <p class="w3-center"><em>A. Chosen Content Type<br> </em></p>
+<center><img src= "stats.png" width="750" height="550"></center>
+<p>Based on your audience analysis, choose a streaming category/type that is appropriate to the topic.
+ 
+As per the answers in the survey, JHS students would much prefer a study live stream wherein each member would test out a study habit/ practice popular on TikTok, and using those study methods, each member will study the same topic, and by the end of it, the group will have a quiz regarding the topic studied, in order to see what method is more effective.
+ 
+     We are not, however, closing our doors to other types of streaming content– such as interviews, and just chatting with our audience about  school-related things, etc…
+ 
+     <br><br>Going beyond the conventional method of testing, the group has opted to conduct the study using a mixture of different content types. Mainly, podcasts, QnAs, and studystreams, but the group will mainly focus on study streams. The objective of this activity is to determine if all, or any, of those study methods popularly shared by the StudyTok community, actually work. The subjects of the study has been assigned different study methods, after which an online test will be conducted, to check for retention and efficiency.
+<br>
+<br>
+ 
+ <p class="w3-center"><em>B. Using The Empathize Stage In The Design Thinking Process<br> </em></p>
+ <p>INSTRUCTIONS:<br><br>
+ 1.) Use the techniques in the Empathize stage of the Design Thinking Process to find a need of viewers in the streaming category that you chose.
+<br><br>2.) Maximize the different techniques of the empathize stage.
+<br><br>3.) Use the methods of basic research to identify the reason why people of different ages, statuses, beliefs, etc. watch the streams they watch.
+<br><br>4.) You can perform research, interview people, and even perform surveys, just make sure that it will not require you to go out of the house.
+ 
+<center><b>SHARING EXPERIENCES  AND OPINIONS</b></center><br>
+People, most specifically, Junior High School students watch study sessions, because the thought of someone “studying with you” keeps them company and makes them comfortable. Based on the interviews conducted via gmeet calls with some of the respondents:
+<center><img src = "interview.png"width="750" height="550"></center>
+<br><p>As per one of the respondents: She chose live study sessions because she would want to see if TikTok study tips were truly effective, and she would want us to serve as testers. She finds watching live study sessions fun because it motivates her to study with the live streamers.
+<br><br>In addition, another interviewee had also mentioned that <i>Studystreams bring me comfort—I kinda feel like I'm with friends studying in a cafe. Plus, I really like the fact that your group is gonna be studying differently, and I think it's pretty exciting!</i></p>
+<br><br>
+<center><b>CHARACTERISITCS OF A GOOD STREAM</b></center><br>
+<p>
+   <br> <b>To execute a quality </b>-worthy streaming, a creator needs to exhibit a number of attributes. Here are some characteristics:
+ 
+<br><br><b>Presentable streamer</b> - Making a good first impression always starts with appearance! To increase views, it is essential to do this. One gains a lot of self-confidence and speeds up the development of his career by maintaining a respectable physical appearance and using proper etiquette. It's crucial to keep your content open to all audiences since we must also be conscious that the age range of our visitors may vary.
+ 
+<br><br><b>Ability to create good content</b> - People are more inclined to visit your channel if you your contents  with higher skill. People will be interested in seeing more if you pull off an outstanding shot, performance and ability.
+ 
+<br><br><b>Interesting content</b> - Look for opportunities to make jokes or call attention to anything amusing by being creative and proactive in your quest. Many outstanding streamers have become well-known by making people laugh and being amusing.
+ 
+<br><br><b>Accessible stream</b> - Convenience for our viewers is provided via accessibility. Your channel's follower count can grow as a result of greater exposure. Accessibility will make it simpler for users to search and share live content on your channel. They will need to share your content quickly so that their friends can also see it because it necessitates rapid action.
+ 
+<br><br><b>Regular uploads</b> - Consistency is the best strategy for getting viewers to return to your channel, thus it's advised to create a routine for when and how often you'll upload so that people will know when to watch your live streams.
+ 
+<br><br><b>Engaged with viewers/other streamers</b> - Since many viewers prefer a more personal relationship with you than merely watching the streamer, engagement with viewers is crucial. Try to work with other streamers to increase your chances of being noticed or discovered because both of your viewers and theirs may be interested in you.</p>
+
+<br>
+<br>
+
+<h3 class="w3-center" id="q2"><b>WHAT'S OUR CONTENT?</b></h3>
+<br>
+<p> The group started this quarter off by choosing which streaming tools were necessary. The picture below is a venn diagram the group used in debating what streaming tool was best. It was boiled down to the decision of OBS or Twitch Studios. 
+After assessing the differences, and similarities between our 2 chosen streaming software: OBS and Twitch Studios, we opted to go for OBS. It has more capabilities, and it is perfect for the group to use for streaming. The OBS Software includes a wide range of plug-in support. It is flexible and has direct integration with a variety of streaming platforms.
+Since the software is free, the startup costs little to nothing. Because it is very flexible and multi-platform, we can deploy it to a broad range of devices as needed without having to worry about licensing.</p>
+<br>
+<br>
+<b>PERSONAL EXPERIENCE OF A MEMBER</b>
+<p>Furthermore, a  member is already familiar with OBS and has used it for a year now. He testified that it was beginner-friendly.
+    <center><img src = "WHY OBS.png"width="800" height="450"></center>
+    <br>
+    Furthermore, streaming equipment to be used for recording would be a device of a member, see  the specs of the device below:<br>
+    1.) Ryzen 5 3400G<br>
+    2.) 16GB RAM DDR4<br>
+    3.) 120GB SSD and 500GB HDD<br>
+    4.) AMD Radeon Vega 11 Graphics (GPU)<br>
+</p>
+<br>
+<p>The streaming platform to bee used would be YouTube, this is the group’s Channel:
+    <br>
+    <br>
+    <p><center><em>Click on the image to go to the Channel.</em></center></p>
+    <center>
+        <a href="https://www.youtube.com/@EdukaChika444">
+            <img src = "channel.png"width="850" height="600"></center>
+        </a>
+    <br>
+    <br>
+    The group’s content would be classified as “studystream”. See the group’s mind map below, to better understand:
+    <center><img src = "mindmap.png"width="850" height="450"></center>
+    <br>
+    Of course, with the channel having study streams as the category, the topics would revolve around studying. But, with an interesting twist! The group will be testing out which study method popularized in the sub-community (in TikTok) “StudyTok” are effective.</p>
+    <br>
+    <br>
+    <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b><i class="fa fa-user w3-margin-right"></i>Here's the Group's Logo:</b></p><br>
+                <img src="EDUKACHIKA.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="EdukaChika Logo"
+                    width="150" height="322">
+                </div>
+
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p>The green-blob serves as a symbol of a person chatting,  in line with the name of the group’s channel “EdukaChika” which plays with the Filipino words - Edukasyon (education), and ‘Chika’ (talking/ conversation).</p>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </p>
+</p>
+
+
+            <br>
+            <br>
+            <div class="w3-content w3-container w3-padding-64" id="needofstreaming"></div>
+            <h3 class="w3-center"><b>STREAM OUTLINE</b></h3>
+            <br>
+            <br>
+
+            <style>
+* {box-sizing:border-box}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+<body>
+
+<div id="slideshow1" class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="streamdesign.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="colorpalette.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="greenwhite.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="streamoverlay.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="justtalking.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="BRB screen.gif" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1,slideshow1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
+  <span class="dot" onclick="currentSlide(3, slideshow1)"></span>
+  <span class="dot" onclick="currentSlide(3, slideshow1)"></span>
+  <span class="dot" onclick="currentSlide(3, slideshow1)"></span>
+  <span class="dot" onclick="currentSlide(3, slideshow1)"></span>
+</div>
+</div>
+<br>
+
+<script>
+var slideshow1 = document.getElementById("slideshow1");
+slideshow1.currentSlideIndex = 1;
+showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+var slideshow2 = document.getElementById("slideshow2");
+slideshow2.currentSlideIndex = 1;
+showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+
+function plusSlides(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex += n, slideshow);
+}
+
+function currentSlide(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex = n, slideshow);
+}
+
+function showSlides(n, slideshow) {
+  
+
+
+  var i;
+  var slides = slideshow.getElementsByClassName("mySlides");
+  var dots = slideshow.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+  if (n < 1) {slideshow.currentSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow.currentSlideIndex-1].className += " active";
+}
+</script>
+<br>
+<br>
+<b>Guidelines to Keep in Mind</b>
+<p>The group guarantees that the Privacy policy Act of The Philippines–Under R.A. 10173, your personal data is treated almost literally in the same way as your own personal property. Thus, it should never be collected, processed and stored by any organization without your explicit consent, unless otherwise provided by law.</p>
+<br>
+<center><b>STREAM TIMELINE</b></center><br>
+    <p>In the streaming outline, the group created a storyboard to perfectly visualize the flow of the stream. See the images below: 
+The stream will be divided into three main parts:<br>
+a.) Pre-Stream<br>
+b.) Mid-Stream (Pre-Study)<br>
+c.) Post-Study Sesh<br>
+<br>
+<center><b><em>a. Pre-Stream</center></em></b>
+<br>
+<img src="1.png" class="w3-round w3-image" alt="Pre-Stream 1" width="450" height="333">
+<div class="w3-col m6 w3-hide-small w3-padding-large">
+    <p>10 minutes before the camera roles the team would check their camera quality, screen share quality,  and audio quality. This portion may be extended or shortened depending on the difficulty of the problem shoot.</p>
+</div>
+<br>
+<br>
+<br>
+<img src="edukachikas.png" class="w3-round w3-image" alt="Pre-Stream 2" width="400" height="222">
+<div class="w3-col m6 w3-hide-small w3-padding-large">
+    <p>This screen will be flashed for the first 5 minutes of the stream for idle time to gain viewers. The group will be playing copy-right free music for the audience to be entertained while idling.</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<center><b><em>b. Mid-Stream/Pre-Quiz</center></em></b>
+<br>
+<center><img src="2.png" width="850" height="500"></center>
+<p>After the pre-stream, the group will now be entering into the “Mid-stream”, this phase is also called the “pre-quiz”-- In this portion of the stream, the group will be greeting the viewers, briefly introducing the purpose of EdukaChika, introducing the members, and having a quick watch of everyone’s pre-recorded mini vlogs (the vlogs would be around 3-5 minutes long). The vlog will be containing the experience of the members with studying the topic in a whole different study method from what they are used to. After the watching of mini-vlogs, the group would then have a pre-interview, wherein the following questions would be asked:<br>
+1.) “What did you find challenging about the study method assigned to you?”<br>
+2.) “How did you feel about the topic being studied?”<br>
+3.) “Are you ready for the 15-minute quiz?”<br>
+Note that more questions may be asked, but these are the main questions that the group should answer.</p>
+<br>
+<img src="3.png" class="w3-round w3-image" alt="Mid-Stream" width="400" height="222">
+<div class="w3-col m6 w3-hide-small w3-padding-large">
+    <p>Once those questions have been answered,
+The group will immediately proceed to take
+The 15-minute quiz, simultaneously someone
+from the group will be screen-sharing a timer
+To maintain punctuality. 
+
+The quiz may be held via  Quizziz, Kahoot, or 
+Google forms.</p>
+</div>
+<br>
+<br>
+<br>
+<center><b><em>c. Post-Study Sesh</center></em></b>
+<br>
+<center><img src="4.png" width="850" height="500"></center>
+<br>
+<p>The members would all be sending their respective scores to the group chat created, one member would screenshare all of the results. After the scores have been showed, members will exammine who the highest scorer is, and members would be asking the following to the highest scorer:<br>
+    <br>
+1.) “What were your thoughts during the quiz?”<br>
+2.) “Would you recommend this  study method to other JHS students in hopes of improving their study habitt?”<br>
+3.) “On a scale of 1-10 how effective was this study method for you?”<br>
+4.) “What considerations did you take when using this study method?” (For example:: The highest scorer used the Pomodoro method in studying, the member must’ve considered the time, and hours that  they are most active in studying in.)<br>
+<br>
+Shortly after those questions have been answered by the member, the group will proceed to have an interview with everyone in the group. The questions to be asked would be about the topic that was quizzed, discussions and rating of study methods, and thoughts about the stream. Furthermore, this would be a good time for the group to interact with the audience, and ask them questions as well.</p>
+<br>
+<br>
+<center><img src="5.png" class="w3-round w3-image" alt="Post-Stream" width="500" height="333"></center>
+<p>After that, the group will proceed to their outros.</p>
+<br>
+<center><img src="6.png" width="850" height="500"></center>
+<p> The stream will be no more than 1 hour.</p>
+<br>
+<br>
+<h3 class="w3-center"><b>GROUP INVITATION</b></h3>
+<br>
+<br>
+<center><video width="850" height="500" controls>
+  <source src="invitation.mp4" type="video/mp4">
+  <source src="invitation.ogg" type="video/ogg">
+  Your browser does not support HTML video.
+</video></center>
+<br>
+<p>The poster is set to be as realistic as possible, in line with our audience demographic. So that our audience can feel more comfortable, and cool with the group. You, the person reading this, can always join us in our studies and chikas!</p>
+</body>
+
+<br>
+<br>
+<br>
+
+<h2 class="w3-center" id="q3"><b>STREAM ANALYSIS</b></h2>
+<br>
+<b><em>I.  Summary of Stream</em></b>
+<p>The stream centered around studying. Specifically, it focused on the effectiveness of various study methods that are well-known online, particularly on the TikTok platform.</p>
+<br>
+<p>The group conducted a live stream on YouTube, the group started their live at 11:00AM, but the official start was around 11:05 AM. The stream ended at exactly 12:25N.</p>
+<br>
+<p>Prior to the stream starting– one member of the team assigned all the members a study habit popularized on Tiktok, to follow. Then, the team was asked to film themselves while studying the materials given to them– the topic of the exam focused on Greek mythology, Psyche and Cupid, in line with Valentine’s day fast approaching. The group took the exam as a whole. </p>
+<center><img src="educhika.png" width="750" height="450"></center>
+<center><b><a href="https://drive.google.com/file/d/1zmFAwWN0nOtF_kq3SBi-95ts31m5t_yC/view?usp=share_link\">Appendix A:Timelapse of Quiz</b></center></a>
+<br>
+<p> During the whole stream, the group stuck with the original storyboard timeline <b><a href="https://docs.google.com/document/d/183lZ97-z5jXpdLYqJ_AFuPfsdylqlINeHxtU-bhSp_A/edit?usp=share_linkhttps://docs.google.com/document/d/183lZ97-z5jXpdLYqJ_AFuPfsdylqlINeHxtU-bhSp_A/edit?usp=share_link">(Appendix B)</a></b>. The group started out by greeting the audience, and occasionally shouting out viewers– the group then proceeded with mentioning the giveaways to hook the audience (one-hundred pesos for two viewers that followed the criteria).</p>
+<br>
+<p>The group proceeded with the discussion of the study methods assigned to each group member. Then, the group watched the “Appendix B”, wherein a timelapse was shown of the group showing off their study methods, and taking the exam as a whole. Furthermore, the group has discussed some questions with regards to the quiz– “How easy was the quiz?”, “What problems did you encounter?”, were some of the questions included in the “post-interview”.</p>
+<br>
+<p>Here are the screenshots of the team’s individual scores: <b><a href="https://www.canva.com/design/DAFZxRf35PI/9P-oyOdVpNloAvHmuRe2OQ/edit?utm_content=DAFZxRf35PI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Appendix C.</a></b>
+The highest scorer was Sofia Bianca, a visual learner, and  she got tasked with learning through the ”Blurting technique”. Then, the viewers that won the giveaway were Sarisha Ortega, and Angelika Juanillo.</p>
+<br>
+<p>After the entirety of the stream, the team asked the viewers to answer a short feedback survey.</p>
+<center><img src="figure 1.png" width="300" height="700"></center>
+<center><em>Figure 1:Stream timeline</em></center>
+<br>
+<p>TIMELINE SUMMARIZATION: <b><a href="https://drive.google.com/file/d/1hNa2aD9Wbahrau1cR8US5OXIkDZd675e/view?usp=sharing">(Appendix D)</a></b><br>
+a. During<br>
+b. Greeting of audience<br>
+c. Mention of giveaway<br>
+d. Discussion of study habits<br>
+e. Test scores<br>
+f. Post interview<br>
+g. Game show: Giveaways<br>
+h. End of stream<br>
+<br>
+<b>ENGAGEMENT SUMMARIZATION</b>
+<p>The livestream had garened over one hundred ninety one-views. The group had the most viewers coming from the google mails, and the Facebook posts the group had been sharing.</p>
+<center><img src="figure 2.png" width="750" height="450"></center>
+<center><em><p>Figure 2: External sites or apps where viewers found the stream</p></em></center>
+<br>
+<p>The group had three hundred thirteen (313) impressions, and a 5.4% impression click-through rate. Therefore, only sixteen (16) of the three hundred thirteen (313) viewers viewed the group’s live stream. The group had thirty-three viewers since the stream was published. Twenty-one (21) is the peak viewers that the group had. Lastly, the group peaked at the six-minute mark, wherein the mention of a two–hundred peso giveaway was being awarded to two viewers.</p>
+<br>
+<br>
+<b><em>II.  What Went Well</em></b>
+<br>
+<p>Days before the stream was set in motion, the team did an excellent job of promoting the scheduled live stream using Edukachika's social media platforms. (Facebook, Instagram, TikTok, and Youtube). Countdown posters were continuously uploaded in order to garner an audience. The flow of the stream was neatly organized and discussed beforehand. With that, all of the presenters understood what needed to be done.</p>
+<br>
+<p>A dry run was successfully completed a few hours before the official stream. In the course of that time, a technical member checked the entire stream layout structure to guarantee that it worked as intended in the broadcasting program utilized. Each team member also took this time to ensure that their audio and camera were functioning properly.</p>
+<br>
+<p>After the meticulous preparation of the aforementioned live stream, the broadcast began at the planned hour. All segments were delivered in accordance with the storyboard timeframe. Begin by greeting the audience, introducing the members, and providing a brief overview of Edukachika and the activities that will take place during the event.</p>
+<br>
+<p>The documentary video comprises footage of each member studying using their designated study method and the whole group answering the quiz was presented on the screen. Then after, as per the request of the audience, the scores of each participant was revealed, which served as a checkpoint for each participant's overall experience and a determination of whether or not the study methods they undertook were successful.</p>
+<br>
+<p>The group played a family feud game with the theme of love to close off the stream and awarded cash rewards to the audience winners. Thereafter, farewells were said and the steam ended.</p>
+<br>
+<br>
+<b><em>III.  Missed Opportunities</em></b>
+<br>
+<p> A sudden problem with the tech's connection occurred halfway through the
+stream, causing the stream to lag and eventually coming to an end visually. The team decided to stop the stream even though it could still be heard and continue the giveaway through Google Meet, where most of the viewers joined as well. If only there hadn't been any technical issues, the stream would have ended without problem.</p>
+<br>
+<p>In accordance with what actually occurred, the group lost the chance to continue the entire segment of the stream. Taking into account that the problem arose before the interview was complete.</p>
+<br>
+<p>It was noticed a little bit too late because apparently the stream had been lagging for some time before it froze. Considering that their team consisted of just one technical person—who was also the one streaming, adjusting the layout, and managing everything online. The technical person had been having connection issues because of handling everything on his own, which led to the stream completely breaking down.</p>
+<br>
+<p>The team did not have a backup plan in case what happened occurred, which indicates that they did not anticipate any problems with their stream. The stream would have gone smoothly if the team had chosen to double the number of their technical team and had thought ahead to a backup plan just in case</p>
+<br>
+<br>
+<b><em>IV. Stream Analysis</em></b>
+<br>
+<p>The members of Educhika strived to get the most viewers possible. It centered around a group of people who are close to their age: including classmates, schoolmates, and close friends. The strategy by the group was to spread the news to different and multiple group chats/audiences. These group chats were under the school’s name, as it is group chats of schoolmates. Moreover, the group didn’t end their gathering of viewers there; with the use of their platforms, they maximize their potential by promoting their very own stream. Examples are posting their allotted date and time of their stream (Facebook and Instagram), and each member promoting their stream using their own personal account.</p>
+<br>
+<p>The livestream had garened over one hundred ninety one-views. The group had the most viewers coming from the google mails, and the Facebook posts the group had been sharing</p>
+<center><img src="figure 2.png" width="700" height="400"></center>
+<center><em><p>Figure 1:External sites or apps where viewers found the stream</p></em></center>
+<br>
+<p>The group had three hundred thirteen (313) impressions, and a 5.4% impression click-through rate. Therefore, only sixteen (16) of the three hundred thirteen (313) viewers viewed the group’s live stream. The group had thirty-three viewers since the stream was published. Twenty-one (21) is the peak number of viewers that the group had. Lastly, the group peaked at the six-minute mark, wherein the mention of a two–hundred peso giveaway was being awarded to two viewers.</p>
+<br>
+<p><em>Below is the summarization of data, with provided graphs.</em></p>
+    <center><img src="figure 4 age demo.png" width="500" height="350"></center>
+    <center><em><p>Figure 4:AGE DEMOGRAPHIC OF RESPONDENTS</p></em></center>
+    <br>
+<p>All of the group’s respondents are at the age range of 11-17 years old.</p>
+    <center><img src="figure 5_ relationship to streamer.png" width="500" height="350"></center>
+    <center><em><p>Figure 5: RELATIONSHIP OF RESPONDENTS TO STREAMERS</p></em></center>
+    <br>
+<p>57.1% of the respondents were classmates and 42.9% were friends of the streamer. The group cascaded the stream link on social media, and the group also cascaded this information to their classmate via foot trafficking,  and with the use of Google chat.</p>
+<center><img src="figure 6_ NEW INFORMATION TO THE RESPONDENTS.png" width="500" height="350"></center>
+    <center><em><p>Figure 6: NEW INFORMATION TO THE RESPONDENTS</p></em></center>
+    <br>
+    <p>0 respondents (0%) had answered “1”, meaning none of the information from the stream was new to them.<br> 
+1 respondent  (14.3%) had answered “2”, meaning SOME of the information from the stream was new to them.<br>
+1 respondent (14.3%) had answered “3”, meaning HALF of the information from the stream was somewhat new to them.<br>
+2 respondents (28.6%) have answered “4”, meaning MOST of the information from the stream was new to them.<br>
+3 respondents  (42.9%) have answered “5”, meaning ALL that the information from the stream was new to them.<br>
+<br>
+<center><img src="figure 7.png" width="500" height="350"></center>
+    <center><em><p>Figure 7: GRAPH OF WHEN RESPONDENTS WOULD APPLY THE LEARNED INFORMATION</p></em></center>
+    <br>
+    <p>All of the respondents agreed that you can use this streaming information immediately. A plausible explanation for this immediate use is because of the fact that most of the group’s viewers are students, and therefore these study habits may help them out a lot.</p>
+    <br>
+    <center><img src="figure 8.png" width="500" height="350"></center>
+    <center><em><p>Figure 8: GRAPH OF HOW MUCH THE RESPONDENTS WOULD WANT TO HAVE ANOTHER EPISODE OF THE LIVE STREAM</p></em></center>
+    <br>
+    <p>85.7% of the respondents answered “Yes”, while 14.3% were “No”.  1 respondent answered no, and this may be due to the fact that the group had encountered a technical issue in the midst of the stream. However, EdukaChika is improving with every mistake made. 6 respondents answered “Yes”, this is due to the fact that the team engages with the audience, continually shouts them out, and gives prizes.</p>
+    <br>
+    <center><img src="figure 9.png" width="500" height="350"></center>
+    <center><em><p>Figure 9: KNOWLEDGE OF STREAMERS IN THE TOPIC</p></em></center>
+    <br>
+    <p>All the respondents answered 100% Excellent rate to the streamer's knowledge.
+ The group had researched their study plans beforehand, and the fact that the group is composed of students makes the study habits on “StudyTok‘ even more applicable, and relevant to them.  ThereforeTherefor, the group knows most of the information that they are talking about, because they have learned and applied this in real life.</p>
+ <br>
+ <center><img src="figure 10.png" width="500" height="350"></center>
+    <center><em><p>Figure 10: Data according to “Do you find this streaming content relevant to address solutions, issues or challenges in our  lives.”</p></em></center>
+    <br>
+    <p>85.7% of the respondents answered “Yes” while 14.3 answered “Maybe”.
+Most have answered “Yes'' due” due to the fact that many students come across issues in their studies. Many students are not aware of what study method is appropriate for them. A modern issue that EdukaChika is trying to solve is the Legitimacy of information on the internet, and weather study methods popularized on TikTok do work, and if it does, how would it affect the academic performance of junior high school students?</p>
+<br>
+<center><img src="figure 11.png" width="500" height="350"></center>
+    <center><em><p>Figure 11: Data according to the rate of streamers' ability to engage:</p></em></center>
+    <br>
+    <p>85.7% of the respondents answered “Excellent” while 14.3 answered “Good”. The group is engaging, and continually asks the audience for their opinion– therefore, most of the respondents answered “Excellent”.</p>
+    <br>
+    <center><img src="figure 12.png" width="500" height="350"></center>
+    <center><em><p>Figure 12: Data according to the rate of the design of the stream:</p></em></center>
+    <br>
+    <p>85.7% of the respondents answered “Excellent” while 14.3 answered “Good”. The stream design was bubbly, appropriate, and cute–and the grou was glad that most of the respondents agreed with the stream’s design.</p>
+    <br>
+    <center><img src="figure 13.png" width="500" height="350"></center>
+    <center><em><p>Figure 13: Data according to the time and length of the stream:</p></em></center>
+    <br>
+    <p>All respondents answered 100% Excellent. The group had streamed for a total of 1 hour. Which is typically the usual  time that most streamers silver stream.</p>
+    <br>
+    <center><img src="figure 14.png" width="500" height="350"></center>
+    <center><em><p>Figure 14: Data according to the platform venue of the stream:</p></em></center>
+    <br>
+    <p>All respondents answered 100% Excellent. The group’s chosen platform to live stream in was YouTube– YouTube is an accessible application for everyone, and all the viewers had no issue with accessing the group’s live stream.</p>
+    <br>
+    <center><img src="figure 15.png" width="500" height="350"></center>
+    <center><em><p>Figure 15: Data according to the accuracy of the streaming session outline:</p></em></center>
+    <br>
+    <p>85.7% of the respondents answered “Excellent” while 14.3 answered “Good”.
+ The flow of the stream to most viewers was smooth, and clear, and segued at the right times.</p>
+    <br>
+    <center><img src="figure 16.png" width="500" height="350"></center>
+    <center><em><p>Figure 16: Data according to the comparison between streaming session and expectations:</p></em></center>
+    <br>
+    <p>5.7% of the respondents answered “Excellent” while 14.3 answered “Good”.
+Thee group believes that the stream was good, but if the group had not encountered technical issues,  then maybe all of the respondents had answered ”excellent”.</p>
+    <br>
+    <center><img src="figure 17.png" width="500" height="350"></center>
+    <center><em><p>Figure 17: Data according to the overall streaming session evaluation:</p></em></center>
+    <br>
+    <p>85.7% of the respondents answered “Excellent” while 14.3 answered “Very Good”. Most had respoonded with an “Excellent”, and 1 respondent had  answered “Good”, because tthe stream would  occassionally lag, but thhe things that the group talked about wasas clear.</p>
+    <br>
+    <center><img src="figure 18.png" width="500" height="350"></center>
+    <center><em><p>Figure 18: Data according to “How likely are you to recommend this streaming  session to friends, classmates, family or relatives?”</p></em></center>
+    <br>
+    <p>2 respondents have answered “9”, while 5 answered “10”. Moost of the respondents had a positive feedback, and most would reccommend this to a friend, or a classmate, family, or relative.</p>
+    <br>
+    <center><img src="figure 19.png" width="500" height="350"></center>
+    <center><em><p>Figure 19: Data according to “Things to improve in our stream.”</p></em></center>
+    <br>
+    <p>Most of the respondents had mentioned that everything was all good, but the group needs to focus more on improving the technical side of things.</p>
+    <br>
+    <br>
+    <b><em>V. Conclusion:Why did EdukaChika gain 191+ views in their stream?</em></b>
+    <br>
+    <p>There are numerous reasons as to why the team’s viewership was successful. Here are some of the reasons as to why the team has garnered such number of viewers</p>
+    <br>
+    <em> A. The streamers themselves</em>
+    <p>With the member’s individual fun, quirky, and energetic personalities, it was no shock that their live stream has garnered over one-hundred ninety one views, since it was last streamed. With the personalities of each member, the team got to interact with the audience frequently and spontaneously.</p>
+    <em> B. Visuals  and layout of the stream</em>
+    <p> Along with the members themselves, the visuals and the layout of the stream was cute, and bubbly, which the team strongly believes  could also be a benefactor as to why the stream  has garnered so many views.</p>
+    <em> C. Interest of  the viewers in the topic</em>
+    <p>Another reason could be the mere  fact that the viewers themselves were interested in knowing whether study methods on Tiktok are truly effective for each member with different learning styles.</p>
+    <em> D. Advertising</em>
+    <p>Lastly, another benefactor as to why the stream has garnered views was due to the fact that the advertising was on point. The team has greatly put in effort in promoting the stream, and foot-trafficking. Especially with the promotion of a one-hundred peso giveaway to two  viewers.</p>
+    <center><img src="sample advert.png" width="350" height="400"></center>
+    <center><em><p>Figure 20: Sample advertising material</p></em></center>
+    <br>
+        <center><img src="figure 21.png" width="650" height="330"></center>
+    <center><em><p>Figure 21:<a href="https://www.youtube.com/live/QLmGk3VWlFA?feature=share">Screenshot of livestream on Youtube</a></p></em></center>
+    <br>
+    <p>Overall, the team has really enjoyed their live stream, and is looking forward to the next stream. Using the mistakes of the last stream– the team will use it to effectively create a better stream. The team thanked their viewers for joining, and for supporting EdukaChika.</p>
+    <br>
+    <p>The  group had a post-stream meeting. Each member mentioned how they felt about the stream–One member from the group, Ester Rahcel, had mentioned that: “I really liked the entire stream and how active the viewers were; I loved how both the streamers and the viewers share the same enthusiasm. As previously said, the streamers' personalities or the streamers themselves are the reason for the relationship. The viewers were really pleased with what our group has accomplished; they liked the overall flow of the program and how the group transformed it into a very interactive and engaging stream. We were surprised by the amount of excitement and support from the audience, and we thoroughly loved it!”</p>
+    <br>
+    <p>The team has yet to conclude the most effective study habit of each learner, until then, the team continues to study and strive for accuracy, and for authenticity.</p>
+    <br>
+    <br>
+    <br>
+    <h2 class="w3-center" id="q4"><b>RE-STREAM</b></h2>
+    <br>
+    <h4><b>I. SUMMARY OF STREAM</b></h4>
+    <p>
+        --<br>
+        As the academic year is finally coming to an end,<br>
+        --<br>
+        <center><img src="LL10_EG22-23_STREAM OUTLINE_EDUKACHIKA.png" width="350" height="700">
+            <p><em>Figure 1: Stream Timeline</em></p>
+        </center>
+    <p><b>TIMELINE SUMMARIZATION:</b>(<a href="https://drive.google.com/file/d/1QChfd0AhburVAiMJ6C9SnlvAdJnbT_P_/view?usp=sharing">Appendix D</a>)</p>
+    <p>During:</p>
+    <ol type="a">
+        <li>Introduction</li>
+        <li>Mention of Giveaway</li>
+        <li>Discussion of Senior High School</li>
+    <p><b><center>QUESTIONS</center></b></p>
+    <ol type="1">
+        <li>When you hear of the word "Senior High School", what's the first thing that comes to mind?</li>
+        <li>What's your strand and why?</li>
+        <li>What are your goals for SHS?</li>
+        <li>What are the things you want to develop in SHS?</li>
+        <li>How would you describe your last year of JHS?</li>
+    </ol>
+    <br>
+    <li>Watching of interview</li>
+    <li>Discussion of interview</li>
+     <b><center>QUESTIONS</center></b>
+     <ol type="1">
+        <li>What is your biggest key takeaway from the video?</li>
+        <li>Are you ready for college?</li>
+        <li>What are some fears you have for SHS?</li>
+    </ol>
+    <br>
+    <p>Imagine that your future self is watching this very playback of the live stream, what would be your message to yourself?</p>
+    <li>Announcement of Winners</li>
+    <li>Outro</li>
+</ol>
+     <br>
+     <b>ENGAGEMENT SUMMARIZATION</b>
+     <p>The livestream had garened over one hundred ninety one-views. The group had the most viewers coming from the google mails, and the Facebook posts the group had been sharing.</p>
+     <center><img src="shot_51.png" width="750" height="500">
+        <br>
+        <em>Figure 2: External Sites or Apps Where Viewers Found the Stream</em>
+     </center>
+     <br>
+     <p>The group had three hundred thirteen (313) impressions, and a 5.4% impression click-through rate. Therefore, only sixteen (16) of the three hundred thirteen (313) viewers viewed the group’s live stream. The group had thirty-three viewers since the stream was published. Twenty-one (21) is the peak viewers that the group had. Lastly, the group peaked at the six-minute mark, wherein the mention of a two–hundred peso giveaway was being awarded to two viewers.</p>
+     <br>
+     <br>
+     <h4><b>II. WHAT WENT WELL</b></h4>
+     <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWith a lot of planning, and loads of dedication–the group set out on an adventure! The adventure being going to the house of one of the members. The streamers were able to go to one location successfully, and all were safe.</p>
+     <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIn comparison to the last stream– the second stream went well! There were little to  no technical issues, nor any conflict. The group had fun, and spent the whole time just learning about each other.</p>
+     <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe stream ended with a good laugh– the streamers enjoyed it, and the viewers did as well.</p>
+     <br>
+     <h4><b>III. MISSED OPPORTUNITIES</b></h4>
+     <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThere was little to no missed opportunities– apart from the fact that the stream started a bit late. The stream ws supposed to start at around 10:30AM, however some members arrived late, therefor the stream started at 11:00AM– the streamers posted on Facebook about this, though.</p>
+     <br>
+     <p><b><center>Streaming Analysis</center></b></p>
+     <p>The members of Educhika strived to get the most viewers possible. It centered around a group of people who are close to their age: including classmates, schoolmates, and close friends. The strategy by the group was to spread the news to different and multiple group chats/audiences. These group chats were under the school’s name, as it is group chats of schoolmates. Moreover, the group didn’t end their gathering of viewers there; with the use of their platforms, they maximize their potential by promoting their very own stream. Examples are posting their allotted date and time of their stream (Facebook and Instagram), and each member promoting their stream using their own personal account.</p>
+     <p>The livestream had garened over one hundred ninety one-views. The group had the most viewers coming from the google mails, and the Facebook posts the group had been sharing.</p>
+     <center><img src="shot_2.png" width="850" height="650">
+        <br>
+        <em>Figure 1:External sites or apps where viewers found the stream</em>
+     </center>
+     <p>This time, after exactly one week of doing the livestream– the group had sixty two (62) impressions, and a 12.7% impression click-through rate. Therefore, only seven (7) of the sixty two (62) viewers viewed the group’s live stream. The group had fourteen (14) views since the stream was published. Nine (9) is the peak number of viewers that the group had. Lastly, the group peaked at the four-minute mark, wherein the mention of a fifty peso gcash giveaway was being mentioned at the very beginning of the stream.</p>
+     <center><img src="shot_3.png" width="970" height="500">
+        <br>
+        <em>Figure 2:Video Analytics of Edukachika’s “daldal with us about senior high” live</em>
+     </center>
+     <br>
+     <p><b>Stream Feedback</b></p>
+     <p>The group received over twenty-four (24) responses in their feedback survey. The survey was done via Google forms, and had sixteen (16) questions. The interpretation of data is shown below.</p>
+     <center><img src="shot_4.png" width="680" height="360">
+        <br>
+        <center><b>Age demographic of viewers</b></center>
+        <br>
+        <p>21 (87.5%) of the respondents had answered that they were 11-17 years of age, 2 (8.3%) had answered that they were 18-24 years old, and 1 respondent had mentioned that they were 45-54 years old.</p>
+     </center>
+     <br>
+     <br>
+     <img src="shot_5.png" class="w3-round w3-image" alt="Mid-Stream" width="450" height="244">
+     <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <br>
+        <center><b>Relationship of Viewers to the Streamer</b></center>
+        <br>
+        <p>12 (50%) of the respondents are friends of the streamer/s, 2 (8.3%) are parent/guardian’s of the streamer/s, 2 (8.3%) of the respondents are fans/ followers of channel, and lastly, 8 (33.3%) are classmates of the streamer/s.</p>
+     </center>
+ </div>
+     <br>
+     <br>
+     <br>
+     <br>
+     <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b>Percentage of New Information to the Viewers</b></p><br>
+                <img src="shot_6.png" alt="Stats"width="450" height="244">
+            </div>
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p>On a scale of 1-5 (1 being the lowest, and 5 being the highest), the group asked the respondents to rate how much information was new to them. 
+    2 (8.3%) of the respondents have answered “1”, being none of the information in the live was new to them, 3 (12.5%) of the respondents had answered “2”, meaning a quarter of the information mentioned in the stream was new to them, 4 (16.7%) of the respondents answered “3”, meaning half of the information was new to them, 6 (25%) had answered “4”, meaning most of the information learned was new to them, and 9 (37.5%) ad answered “5”, meaning all of the information learned was new to them. </p>
+</div>
+     <br>
+     <br>
+     <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <p><b>Application of information learned to the viewer’s lives</b></p><br>
+                <img src="shot_7.png" alt="Stats"width="450" height="244">
+            </div>
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+    <p>15 (62.5%) of the respondents will apply the information learned from the stream immediately, and 9 (37.5%) of the respondents will use the information in 2-6 months.</p>
+</div>
+</div>
+     <br>
+     <br>
+     <br>
+     <br>
+     <center>
+     <b>Interest of viewers in the streaming topic</b>
+     <img src="shot_8.png" width="650" height="380">
+     <p>24 (100%) of the respondents were interested in the topic being streamed. Considering that most viewers are of the age of incoming SHS students, it would be no surprise that they would want to talk about their future.</p>
+     </center>
+     <center>
+     <img src="shot_9.png" width="480" height="222">
+     <br>
+     <b>Rating of viewers on streamers’ knowledge of the topic</b>
+ </center>
+     <p>17 (70.8%) of the respondents had rated the streamers’ knowledge “Excellent”, 6 (25%) of the respondents had rated “good”, and 1 (4.2%) had rated “fair” in the streamers’ knowledge of the topic.</p>
+     </center>
+     <center>
+     <img src="shot_10.png" width="480" height="222">
+     <br>
+     <b>Relevance of streaming content</b>
+ </center>
+     <p>20 (83.3%) of the respondents had answered agreed that the livestream was relevant, 1 (4.2%) had disagreed, and 3 (12.5%) of the respondents had answered “maybe”.</p>
+     </center>
+     <center>
+     <img src="shot_11.png" width="480" height="222">
+     <br>
+     <b>Viewers rating of streamers’ ability to engage</b>
+ </center>
+     <p>18 (75%) of the respondents had rated the streamers’ ability to engage “Excellent”, and 6 (25%) had rated the ability of engagement of the streamers’ as “good”.</p>
+     </center>
+     <center>
+     <img src="shot_12.png" width="480" height="222">
+     <br>
+     <b>Viewers rating of streamers’ design content</b>
+ </center>
+     <p>17 (70.8%) of the respondents had rated the design “Excellent”, and 7 (29.2%) had rated the design as “good”.</p>
+     </center>
+     <center>
+     <img src="shot_13.png" width="480" height="222">
+     <br>
+     <b>Viewers rating of streamers’ duration of streaming</b>
+ </center>
+     <p>16 (66.7%) of the respondents had rated the duration “Excellent”, and 8 (33.3%) had rated the streaming duration as “good”.</p>
+     </center>
+     <center>
+     <img src="shot_14.png" width="480" height="222">
+     <br>
+     <b>Viewers rating of streamers’chosen platform to livestream</b>
+ </center>
+     <p>18 (75%) of the respondents had rated the platform “Excellent”, and 6 (25%) had rated the platform as “good”. This is the reason, because Youtube is very accessible for everyone.</p>
+     </center>
+     <center>
+     <img src="shot_15.png" width="480" height="222">
+     <br>
+     <b>Viewers rating of streamers’ streaming session outline</b>
+ </center>
+     <p>16 (66.7%) of the respondents had rated the streaming session outline an “Excellent”, and 7 (29.2%) of the respondents had rated the streaming session outline “very good”, and 1(4.2%) of the respondents had rated the streaming session outline “fair”.</p>
+     </center>
+     <center>
+     <img src="shot_16.png" width="480" height="222">
+     <br>
+     <b>Viewers expectations being met</b>
+ </center>
+     <p>15 (62.5%) of the respondents’ expectations have been met, and 8 (33.3%) of the respondents had rated their expectations being met as “very good”, and 1(4.2%) of the respondents had rated the streaming session outline “good”.</p>
+     </center>
+     <center>
+     <img src="shot_17.png" width="480" height="222">
+     <br>
+     <b>Viewers’ overall streaming session evaluation</b>
+ </center>
+     <p>21 (87.5%) of the viewer’s rated the overall stream as “excellent” and 3 (12.5%) of the respondents rated the overall stream as “very good”.</p>
+     </center>
+     <center>
+     <img src="shot_18.png" width="480" height="222">
+     <br>
+     <b>Viewers’ recommendation rating</b>
+ </center>
+     <p>On a scale of 1-10 (1 being the lowest rating, and 10 being the highest rating)-- the group surveyed the respondents of their likelihood to suggest the group’s stream to others. 1 (4.2%) of the respondents rated “6”, 4 (16.7%) of the respondents  rated “7”, 1 (4.2%) rated “8”, 3 (12.5%) of the respondents rated “9”, and lastly, 15 (62.5%) of the respondents rated “10 ”.</p>
+     </center>
+     <br>
+     <p><em>Most of the viewers would recommend the group’s stream to others.</em></p>
+     <p>Many loved the stream, but 2 respondents have left comments saying that the group needs to improve on the stream layout. Also many have commented to improve the audio, and camera quality. The group has taken note of these comments.</p>
+     <br>
+     <br>
+     <h4><b>IV. Conclusion: Why did EdukaChika gain 62 views in their stream?</b></h4>
+     <br>
+     <p>&nbsp&nbsp&nbsp&nbsp&nbspThere are numerous reasons as to why the team’s viewership was at this number. This number is lower in comparison to the first live stream. The group suspects this is the cause since it has only been one week since the livestream, in comparison to the previous livestream wherein it was scrutinized after two months. The number of viewers would still add in the coming days. However, so far the group is considering that this as a high viewership for a one week old stream.</p>
+     <br>
+     <p><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHere are some factors as to why the group thinks this way:</b></p>
+     <ol type="A">
+        <li>The streamers themselves</li>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbspWith the member’s individual fun, quirky, and energetic personalities, it was no shock that their live stream has garnered over sixty-two views, since it was last streamed. With the personalities of each member, the team got to interact with the audience frequently and spontaneously. Furthermore, the members themselves were having loads of fun, despite talking about a topic that scares many junior high school students.</p>
+        <li>Visuals  and layout of the stream</li>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbspThis stream, the overlay has changed, so that it can be easier for the tech team to fix everything.</p>
+
+
+<style>
+* {box-sizing:border-box}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+<body>
+
+<div id="slideshow2" class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div>
+  <img src="streamoverlay.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+  <img src="newoverlay.png" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow2)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow2)"></span>  
+</div>
+</div>
+<br>
+
+<script>
+var slideshow1 = document.getElementById("slideshow1");
+slideshow1.currentSlideIndex = 1;
+showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+var slideshow2 = document.getElementById("slideshow2");
+slideshow2.currentSlideIndex = 1;
+showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+
+function plusSlides(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex += n, slideshow);
+}
+
+function currentSlide(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex = n, slideshow);
+}
+
+function showSlides(n, slideshow) {
+  
+
+
+  var i;
+  var slides = slideshow.getElementsByClassName("mySlides");
+  var dots = slideshow.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+  if (n < 1) {slideshow.currentSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow.currentSlideIndex-1].className += " active";
+}
+</script>
+       <p>Here are the overlays. The first overlay is the old overlay, and the second overlay is the group's current brand new overlay.</p>
+       <br>
+       <li>Interest of  the viewers in the topic</li>
+       <p>&nbsp&nbsp&nbsp&nbsp&nbspAnother reason could be the mere  fact that the viewers themselves were interested in knowing whether study methods on Tiktok are truly effective for each member with different learning styles.</p>
+       <li>Advertising</li>
+       <p> &nbsp&nbsp&nbsp&nbsp&nbspLastly, another benefactor as to why the stream has garnered views was due to the fact that the advertising was on point. The team has greatly put in effort in promoting the stream, and foot-trafficking.</p>
+   </ol>
+<style>
+* {box-sizing:border-box}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+<body>
+
+<div id="slideshow3" class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="advert 1.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="advert 2.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="Post 1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="Post 2 A.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="Post 2 B.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="Post 3.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1,slideshow3)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, slideshow3)">&#10095;</a>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1, slideshow3)"></span> 
+  <span class="dot" onclick="currentSlide(2, slideshow3)"></span> 
+  <span class="dot" onclick="currentSlide(3, slideshow3)"></span>
+  <span class="dot" onclick="currentSlide(3, slideshow3)"></span>
+  <span class="dot" onclick="currentSlide(3, slideshow3)"></span>
+  <span class="dot" onclick="currentSlide(3, slideshow3)"></span>
+</div>
+</div>
+<br>
+
+<script>
+var slideshow1 = document.getElementById("slideshow1");
+slideshow1.currentSlideIndex = 1;
+showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+var slideshow2 = document.getElementById("slideshow2");
+slideshow2.currentSlideIndex = 1;
+showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+var slideshow3 = document.getElementById("slideshow3");
+slideshow3.currentSlideIndex = 1;
+showSlides(slideshow3.currentSlideIndex, slideshow3);
+
+
+function plusSlides(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex += n, slideshow);
+}
+
+function currentSlide(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex = n, slideshow);
+}
+
+function showSlides(n, slideshow) {
+  
+
+
+  var i;
+  var slides = slideshow.getElementsByClassName("mySlides");
+  var dots = slideshow.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+  if (n < 1) {slideshow.currentSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow.currentSlideIndex-1].className += " active";
+}
+</script>
+    <br>
+    <br>
+    <center><img src="ytss.png" width="770" height="580">
+        <br>
+        <a href="https://www.youtube.com/live/4E3JZSV1aa0?feature=share">Screenshot of livestream on Youtube</a>
+    <p><b>The group is thankful that the viewers had enjoyed, and with that the stream was concluded.</p></b>
+</center>
+    <p>As the school year comes to an end, a good livestream is what the group needs. It looked like the group and the viewers enjoyed the stream alot. The group reflected on their whole school year, the school year went well. Another thing to mention was before the stream ended the members were asked a hypothetical scenario–  “Imagine that your future self is watching this very playback of the live stream, what would be your message to yourself ?”, the members all answered honestly, and many mentioned that they hope they are still okay in the future.</p>
+    <br>
+    <p><em><b>"As unbiased as possible, the group thought that the stream went well, and so did the viewers" (based on the feedback form).</b></em></p>
+
+
+
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min"><img src="backgroundimg1.png">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-dark green w3-wide">MEET THE TEAM</span>
+        </div>
+    </div>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #F6F3EF;
+  color: ##D1DDC1;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+ 
+.active, .accordion:hover {
+  background-color: #BFC4A3;
+}
+ 
+.accordion:after {
+  content: '\002B';
+  color:dar-green;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+ 
+.active:after {
+  content: "\2212";
+}
+ 
+.panel {
+  padding: 0 18px;
+  background-color: #F6F3EF;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+ 
+ 
+<p>Get to know the brains behind team EdukaChika! You may contact any of the group's members for any inquiries and concerns. </p>
+ <p class="w3-center"><em>Click the Boxes Below to Reveal The Members</em></p>
+<button class="accordion"> <p class="w3-center"><em>FACILITATOR</em></p></button>
+<div class="panel">
+<br>  <center><img src= "./hannah.png">
+<center><b>VALENZUELA, HANNAH NICOLE</b></center>
+<p>📧Contact Me Via Google Chat or Email<br> ap.hannahnicole.valenzuela@apecschools.edu.ph</p>
+</div>
+ 
+<button class="accordion"><p class="w3-center"><em>SCRIBE 1</em></button>
+<div class="panel">
+ <br>  <center><img src= "./chel.png"></center>
+<center><b>YANGAT, ESTER RACHEL</b><br>
+<p>📧Contact Me Via Google Chat or Email<br> ap.esterrachel.yangat@apecschools.edu.ph</p></center>
+</div>
+ 
+ 
+<button class="accordion"><p class="w3-center"><em>SCRIBE 2</em></button>
+<div class="panel">
+  <br>  <center><img src= "./mari.png"></center><p>
+ <center><b>MAEN, MARICLARE JASTIN</b><br>    
+ <p>📧Contact Me Via Google Chat or Email<br> ap.mariclarejastin.maen@apecschools.edu.ph</p></center></div>
+ 
+<button class="accordion"><p class="w3-center"><em>SCRIBE 3</em></button>
+<div class="panel">
+   <br>  <center><img src= "./audrey.png"></center><p>
+       <center><b>CRUZ, JENNIFER AUDREY</b><br>
+       <p>📧Contact Me Via Google Chat or Email<br> ap.ap.jenniferaudrey.cruz@apecschools.edu.ph@apecschools.edu.ph</p></div>
+</center>
+<button class="accordion"><p class="w3-center"><em>SPOKESPERSON 1</em></button>
+<div class="panel">
+  <br>  <center><img src= "./charles.png"></center><p> <center>
+      <b>MARCELO, CHARLES GABRIEL</b><br>
+      <p>📧Contact Me Via Google Chat or Email<br> ap.charlesgabriel.marcelo@apecschools.edu.ph</p></center>
+  </div>
+ 
+<button class="accordion"><p class="w3-center"><em>SPOKESPERSON 2</em></button>
+<div class="panel">
+   <br>  <center><img src= "./sofia.png"></center><p>
+       <center><b>HIDALGO, SOFIA BIANCA</b><br>
+       <p>📧Contact Me Via Google Chat or Email<br> ap.sofiabianca.hidalgo@apecschools.edu.ph</p></center></div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+ 
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+ 
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-gREEN"><i class="fa fa-arrow-up w3-margin-right"></i>TO THE TOP</a>
+        <div class="w3-xlarge w3-section">
+   
+    <p class="w3-small">GROUP 4 B10-10-S2-1 </p>
+    <!-- Footer end. -->
+    </footer>
+ 
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+ 
+        // Change style of navbar on scroll
+        window.onscroll = function () { myFunction() };
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+ 
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+   
+</body>
+
+</html>
